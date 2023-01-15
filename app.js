@@ -1,18 +1,18 @@
 
-let guessedNumber= 10;
+let guessedNumber = 10;
 
 let answer = prompt ("guess a number between 1 - 20");
 
-console.log("Hello," + prompt); 
-
-if (answer < 9) {
-console.log("too low");
-} else if (answer > 11) {
-  console.log ("too high");
-} else (answer == guessedNumber); {
-  console.log ("Congratulations!!!");
+if (answer){
+  console.log(`The number you guessed is ${answer}`); 
+    if (answer < guessedNumber) {
+  console.log("too low");
+  } else if (answer > guessedNumber) {
+    console.log ("too high");
+  } else if (answer == guessedNumber) {
+    console.log ("Congratulations!!!");
+  }
 }
-
 
 
 let birthMonth = prompt ("what is your birth month?");
@@ -26,7 +26,7 @@ break;
 case "june":
 case "july":
 case "august":
-console.log ("you where bron in the summer")
+console.log ("you where born in the summer")
 break;
 case "september":
 case "october":
@@ -37,6 +37,7 @@ case "december" :
 case "january":
 case "febuary": 
 console.log("you where born in the winter")
+break;
 default: 
 console.log("I dont know that one.....")
 }
